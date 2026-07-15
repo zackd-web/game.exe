@@ -529,5 +529,174 @@ export const recommendations = {
     title: "VAMPIRE SURVIVORS / BROTATO / HALLS OF TORMENT",
     specs: "Genre: Survival Roguelike | Mode: Single Player | Fokus: Wave, build, survive time",
     desc: "Cocok untuk sesi 'tahan selama mungkin', upgrade cepat, dan build yang meledak di late run."
+  },
+    // ========== REKOMENDASI MOBILE (dipakai kalau platform = mobile) ==========
+  mobile_comp_fps: {
+    rule: "IF (GENRE = AKSI) AND (MODE = KOMPETITIF) AND (PLATFORM = MOBILE) AND (SUBTIPE = FPS)",
+    title: "CALL OF DUTY MOBILE / PUBG NEW STATE / BLOOD STRIKE",
+    specs: "Genre: FPS Mobile | Platform: HP | Fokus: Aim touch/gyro, ranked, sesi cepat",
+    desc: "Rekomendasi untuk HP: sensasi FPS kompetitif tanpa harus PC. Cocok untuk ranked singkat dan clutch di layar sentuh."
+  },
+  mobile_comp_br: {
+    rule: "IF (GENRE = AKSI) AND (MODE = KOMPETITIF) AND (PLATFORM = MOBILE) AND (SUBTIPE = BATTLE ROYALE)",
+    title: "PUBG MOBILE / FREE FIRE / COD MOBILE BR",
+    specs: "Genre: Battle Royale Mobile | Platform: HP | Fokus: Loot, rotasi, clutch",
+    desc: "Jalur BR yang wajar di HP. Tetap tensi tinggi, tapi kontrol dan map disesuaikan mobile."
+  },
+  mobile_comp_moba: {
+    rule: "IF (GENRE = AKSI) AND (MODE = KOMPETITIF) AND (PLATFORM = MOBILE) AND (SUBTIPE = MOBA)",
+    title: "MOBILE LEGENDS / HONOR OF KINGS / WILDRIFT",
+    specs: "Genre: MOBA Mobile | Platform: HP | Fokus: Role, team fight, ranked",
+    desc: "MOBA native mobile: match lebih pendek, kontrol sentuh, tetap butuh map sense dan kerja sama."
+  },
+  mobile_action_hard: {
+    rule: "IF (GENRE = AKSI) AND (MODE = SINGLE) AND (PLATFORM = MOBILE) AND (SUBTIPE = SULIT)",
+    title: "DEAD CELLS MOBILE / PASCAL'S WAGER / GRIMVALE",
+    specs: "Genre: Action sulit di HP | Platform: Mobile | Fokus: Pattern, skill, challenge",
+    desc: "Alternatif soulslike/aksi berat yang realistis di HP, bukan port console berat."
+  },
+  mobile_action_fast: {
+    rule: "IF (GENRE = AKSI) AND (MODE = SINGLE) AND (PLATFORM = MOBILE) AND (SUBTIPE = CEPAT)",
+    title: "DEAD CELLS / SOUL KNIGHT / SKY FORCE RELOADED",
+    specs: "Genre: Fast action mobile | Platform: HP | Fokus: Tempo, skill, run pendek",
+    desc: "Aksi cepat yang enak di sesi singkat di HP."
+  },
+  mobile_action_story: {
+    rule: "IF (GENRE = AKSI) AND (MODE = SINGLE) AND (PLATFORM = MOBILE) AND (SUBTIPE = CERITA)",
+    title: "GENSHIN IMPACT / HONKAI STAR RAIL / LIFE IS STRANGE MOBILE",
+    specs: "Genre: Action / story mobile | Platform: HP | Fokus: Cerita, karakter, progres",
+    desc: "Pengalaman aksi/cerita yang memang didesain atau dioptimalkan untuk mobile."
+  },
+  mobile_horror: {
+    rule: "IF (GENRE = HORROR) AND (PLATFORM = MOBILE)",
+    title: "DREADOUT MOBILE / HAUNTED HOSPITAL / DEEMO-STYLE HORROR SHORTS / DEATH PARK",
+    specs: "Genre: Horror mobile | Platform: HP | Fokus: Atmosfer, jump scare, sesi pendek",
+    desc: "Horror yang cocok di HP: singkat, tegang, tanpa butuh PC high-end."
+  },
+  mobile_horror_coop: {
+    rule: "IF (GENRE = HORROR) AND (MODE = CO-OP) AND (PLATFORM = MOBILE)",
+    title: "IDENTITY V / DEAD BY DAYLIGHT MOBILE / PROJECT: PLAYTIME STYLE",
+    specs: "Genre: Co-op / asym horror mobile | Platform: HP | Fokus: Mabar, panik, chase",
+    desc: "Panik bareng di HP—bukan Phasmophobia PC, tapi vibe chase/horror multipemain di mobile."
+  },
+  mobile_survival: {
+    rule: "IF (GENRE = SURVIVAL) AND (PLATFORM = MOBILE)",
+    title: "LAST DAY ON EARTH / FROSTPUNK MOBILE / ARK MOBILE",
+    specs: "Genre: Survival mobile | Platform: HP | Fokus: Craft, base, bertahan",
+    desc: "Survival crafting yang wajar di HP, bukan The Forest / Subnautica PC."
+  },
+  mobile_story: {
+    rule: "IF (GENRE = PETUALANGAN) AND (FOKUS = CERITA) AND (PLATFORM = MOBILE)",
+    title: "EPIC / CHOICES / LIFE IS STRANGE / GENSHIN STORY QUESTS",
+    specs: "Genre: Story mobile | Platform: HP | Fokus: Narasi, karakter, pilihan",
+    desc: "Cerita kuat di HP tanpa harus main TLOU / console exclusive."
+  },
+  mobile_open_fantasy: {
+    rule: "IF (GENRE = OPEN WORLD) AND (SETTING = FANTASY) AND (PLATFORM = MOBILE)",
+    title: "GENSHIN IMPACT / TORAM ONLINE / BLACK DESERT MOBILE",
+    specs: "Genre: Fantasy open world mobile | Platform: HP | Fokus: Explore, gacha/MMO loop, world",
+    desc: "Open world fantasi di HP. Bukan Elden Ring / Skyrim—tapi eksplorasi luas yang memang mobile-first."
+  },
+  mobile_open_urban: {
+    rule: "IF (GENRE = OPEN WORLD) AND (SETTING = URBAN) AND (PLATFORM = MOBILE)",
+    title: "GTA SAN ANDREAS DEFINITIVE / GANGSTAR VEGAS / CYBER HUNTER STYLE",
+    specs: "Genre: Urban open world mobile | Platform: HP | Fokus: Kota, misi, kebebasan",
+    desc: "Open world kota di HP. Bukan GTA V PC—tapi kebebasan urban yang masuk akal di mobile."
+  },
+  mobile_open_nature: {
+    rule: "IF (GENRE = OPEN WORLD) AND (SETTING = ALAM) AND (PLATFORM = MOBILE)",
+    title: "GENSHIN IMPACT / SKY: CHILDREN OF THE LIGHT / ALBION ONLINE",
+    specs: "Genre: Explore / travel mobile | Platform: HP | Fokus: Dunia, journey, discovery",
+    desc: "Eksplorasi alam/dunia indah di HP. Bukan Zelda BOTW / RDR2—itu console/PC."
+  },
+  mobile_rpg: {
+    rule: "IF (GENRE = RPG) AND (PLATFORM = MOBILE)",
+    title: "GENSHIN IMPACT / HONKAI STAR RAIL / RAID SHADOW LEGENDS-ALT: ANOTHER EDEN",
+    specs: "Genre: RPG mobile | Platform: HP | Fokus: Build, party, progres harian",
+    desc: "RPG yang hidup di ekosistem mobile, bukan CRPG PC seperti Baldur's Gate."
+  },
+  mobile_rpg_loot: {
+    rule: "IF (GENRE = RPG) AND (FOKUS = LOOT) AND (PLATFORM = MOBILE)",
+    title: "DIABLO IMMORTAL / PATH OF EXILE MOBILE / TORAM ONLINE",
+    specs: "Genre: Loot RPG mobile | Platform: HP | Fokus: Grind, gear, build",
+    desc: "Loop loot/grind di HP tanpa harus Diablo IV PC."
+  },
+  mobile_party: {
+    rule: "IF (GENRE = PARTY) AND (PLATFORM = MOBILE)",
+    title: "STUMBLE GUYS / AMONG US / MONOPOLY GO / FALL GUYS MOBILE",
+    specs: "Genre: Party mobile | Platform: HP | Fokus: Mabar, fun, sesi pendek",
+    desc: "Party/mabar yang native di HP."
+  },
+  mobile_sim_life: {
+    rule: "IF (GENRE = SIM) AND (FOKUS = LIFE) AND (PLATFORM = MOBILE)",
+    title: "HAY DAY / THE SIMS MOBILE / STARDEW VALLEY MOBILE",
+    specs: "Genre: Life / farming mobile | Platform: HP | Fokus: Cozy, harian, santai",
+    desc: "Life sim / farming yang enak di HP."
+  },
+  mobile_sim_build: {
+    rule: "IF (GENRE = SIM) AND (FOKUS = BUILD) AND (PLATFORM = MOBILE)",
+    title: "SIMCITY BUILDIT / TOWNSHIP / POCKET CITY 2",
+    specs: "Genre: City / build mobile | Platform: HP | Fokus: Bangun, tata, idle progres",
+    desc: "Builder di HP—bukan Cities Skylines PC."
+  },
+  mobile_puzzle: {
+    rule: "IF (GENRE = PUZZLE) AND (PLATFORM = MOBILE)",
+    title: "MONUMENT VALLEY / THE ROOM / BABY IS YOU-ALT: LYNE / MONUMENT VALLEY 2",
+    specs: "Genre: Puzzle mobile | Platform: HP | Fokus: Logika, sesi pendek",
+    desc: "Puzzle sentuh yang cocok di HP."
+  },
+  mobile_cozy: {
+    rule: "IF (GENRE = COZY / INDIE) AND (PLATFORM = MOBILE)",
+    title: "ALBION / SKY: CHILDREN OF THE LIGHT / TOCA LIFE WORLD",
+    specs: "Genre: Cozy mobile | Platform: HP | Fokus: Santai, visual, low stress",
+    desc: "Santai di HP tanpa tuntutan sesi maraton PC."
+  },
+  mobile_rhythm: {
+    rule: "IF (GENRE = RHYTHM) AND (PLATFORM = MOBILE)",
+    title: "OSU!DROID / CYTUS II / PHIGROS / BEATSTAR",
+    specs: "Genre: Rhythm mobile | Platform: HP | Fokus: Timing, score, chart",
+    desc: "Rhythm game yang memang hidup di ekosistem mobile."
+  },
+  mobile_strategy: {
+    rule: "IF (GENRE = STRATEGI) AND (PLATFORM = MOBILE)",
+    title: "CLASH ROYALE / PLANTS VS ZOMBIES 2 / CIVILIZATION REVOLUTION 2 / NORTHGARD MOBILE",
+    specs: "Genre: Strategy mobile | Platform: HP | Fokus: Taktik, sesi pendek–menengah",
+    desc: "Strategi yang wajar di HP—bukan StarCraft / Factorio full PC."
+  },
+  mobile_card: {
+    rule: "IF (GENRE = CARD) AND (PLATFORM = MOBILE)",
+    title: "HEARTHSTONE / LEGENDS OF RUNETERRA / SLAY THE SPIRE MOBILE / MARVEL SNAP",
+    specs: "Genre: Card / deck mobile | Platform: HP | Fokus: Deck, match pendek",
+    desc: "Card game yang sangat cocok di HP."
+  },
+  mobile_sports: {
+    rule: "IF (GENRE = OLAHRAGA) AND (PLATFORM = MOBILE)",
+    title: "EA FC MOBILE / eFOOTBALL / NBA INFINITE",
+    specs: "Genre: Sports mobile | Platform: HP | Fokus: Match cepat, ranked, event",
+    desc: "Olahraga digital di HP."
+  },
+  mobile_racing: {
+    rule: "IF (GENRE = BALAP) AND (PLATFORM = MOBILE)",
+    title: "ASPHALT 9 / REAL RACING 3 / NEED FOR SPEED NO LIMITS",
+    specs: "Genre: Racing mobile | Platform: HP | Fokus: Race, upgrade, touch control",
+    desc: "Balap arcade/sim-lite di HP—bukan Assetto Corsa wheel sim."
+  },
+  mobile_fighting: {
+    rule: "IF (GENRE = FIGHTING) AND (PLATFORM = MOBILE)",
+    title: "STREET FIGHTER DUEL / MORTAL KOMBAT MOBILE / SHADOW FIGHT 3",
+    specs: "Genre: Fighting mobile | Platform: HP | Fokus: Combo, PvP, fight short",
+    desc: "Fighting yang diadaptasi untuk kontrol mobile."
+  },
+  mobile_rogue: {
+    rule: "IF (GENRE = ROGUELIKE) AND (PLATFORM = MOBILE)",
+    title: "DEAD CELLS MOBILE / SLAY THE SPIRE / HADES-ALT MOBILE ROGUELIKES / VAMPIRE SURVIVORS-LIKE",
+    specs: "Genre: Roguelike mobile | Platform: HP | Fokus: Run, build, one more try",
+    desc: "Roguelike yang enak di sesi HP."
+  },
+  mobile_fallback: {
+    rule: "IF (PLATFORM = MOBILE) AND (NO SPECIFIC MOBILE MAPPING)",
+    title: "GENSHIN IMPACT / MOBILE LEGENDS / COD MOBILE / STARDEW VALLEY MOBILE",
+    specs: "Genre: Mixed mobile picks | Platform: HP | Fokus: Aman, populer, mudah dimulai",
+    desc: "Fallback aman kalau preferensi spesifik belum punya mapping mobile. Tetap game yang wajar di HP."
   }
 };

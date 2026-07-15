@@ -67,7 +67,7 @@ export default function App() {
           /* Screen Hasil Akhir */
           <div className="text-left">
             <div className="bg-[#00ff00] text-black p-4 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-6">
-              <h2 className="text-2xl font-black m-0 tracking-tighter">FILM PILIHAN UNTUKMU:</h2>
+              <h2 className="text-2xl font-black m-0 tracking-tighter">REKOMENDASI GAME UNTUKMU:</h2>
             </div>
             
             <div className="bg-black text-[#00ff00] p-3 border-4 border-black font-bold text-xs uppercase mb-6 tracking-tight box-border">
@@ -81,7 +81,7 @@ export default function App() {
               
               <div className="bg-[#ffff00] p-4 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] box-border">
                 <span className="text-xs font-black uppercase block mb-1">
-                  [ INFO FILM: SUTRADARA & RATING ]
+                  [ INFO GAME ]
                 </span>
                 <p className="text-sm text-black font-black m-0 leading-relaxed">
                   {recommendations[resultKey].specs}

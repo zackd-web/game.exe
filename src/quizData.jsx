@@ -25,39 +25,39 @@ export const quizData = {
   action_competitive_type: {
     text: "KAMU LEBIH SUKA PERTEMPURAN YANG SEPERTI APA?",
     options: [
-      { text: "FPS TAKTIS, TEMBAKAN PRESISI, DAN TEAMPLAY", result: "comp_fps_tactical" },
-      { text: "BATTLE ROYALE, LOOTING, ROTASI, DAN CLUTCH", result: "comp_battle_royale" },
-      { text: "MOBA, ROLE, MAP CONTROL, DAN TEAM FIGHT", result: "comp_moba" },
-      { text: "HERO SHOOTER / ABILITY BASED / CHARACTER KIT", result: "comp_hero_shooter" }
+      { text: "FPS TAKTIS, TEMBAKAN PRESISI, DAN TEAMPLAY",  next: "filter_platform", stash: "comp_fps_tactical" },
+      { text: "BATTLE ROYALE, LOOTING, ROTASI, DAN CLUTCH",  next: "filter_platform", stash: "comp_battle_royale" },
+      { text: "MOBA, ROLE, MAP CONTROL, DAN TEAM FIGHT",  next: "filter_platform", stash: "comp_moba" },
+      { text: "HERO SHOOTER / ABILITY BASED / CHARACTER KIT",  next: "filter_platform", stash: "comp_hero_shooter" }
     ]
   },
 
   action_single_type: {
     text: "KAMU MAU AKSINYA LEBIH KE ARAH MANA?",
     options: [
-      { text: "COMBAT SULIT, MENANTANG, DAN BUTUH KESABARAN", result: "single_soulslike" },
-      { text: "FAST-PACED, BRUTAL, DAN BANYAK LEDAKAN", result: "single_shooter_hackslash" },
-      { text: "AKSI SINEMATIK DENGAN CERITA KUAT", result: "single_cinematic_action" },
-      { text: "METROIDVANIA / PLATFORMER / MAP TERKUNCI", result: "single_metroidvania" }
+      { text: "COMBAT SULIT, MENANTANG, DAN BUTUH KESABARAN",  next: "filter_platform", stash: "single_soulslike" },
+      { text: "FAST-PACED, BRUTAL, DAN BANYAK LEDAKAN",  next: "filter_platform", stash: "single_shooter_hackslash" },
+      { text: "AKSI SINEMATIK DENGAN CERITA KUAT",  next: "filter_platform", stash: "single_cinematic_action" },
+      { text: "METROIDVANIA / PLATFORMER / MAP TERKUNCI",  next: "filter_platform", stash: "single_metroidvania" }
     ]
   },
 
   action_survival_type: {
     text: "SUMBER TEGANGNYA MAU DARI MANA?",
     options: [
-      { text: "HOROR MONSTER / ZOMBIE / MAKHLUK MENGERIKAN", result: "survival_monster_horror" },
-      { text: "SURVIVAL DUNIA KERAS, CRAFTING, DAN RESOURCE", result: "survival_crafting" },
-      { text: "CO-OP HORROR BARENG TEMAN BIAR PANIK BARENG", result: "survival_coop_horror" },
-      { text: "EXTRACTION / LOOT MASUK-KELUAR / RISIKO TINGGI", result: "survival_extraction" }
+      { text: "HOROR MONSTER / ZOMBIE / MAKHLUK MENGERIKAN",  next: "filter_platform", stash: "survival_monster_horror" },
+      { text: "SURVIVAL DUNIA KERAS, CRAFTING, DAN RESOURCE",  next: "filter_platform", stash: "survival_crafting" },
+      { text: "CO-OP HORROR BARENG TEMAN BIAR PANIK BARENG",  next: "filter_platform", stash: "survival_coop_horror" },
+      { text: "EXTRACTION / LOOT MASUK-KELUAR / RISIKO TINGGI",  next: "filter_platform", stash: "survival_extraction" }
     ]
   },
 
   action_stealth_type: {
     text: "GAYA STEALTH YANG KAMU SUKA?",
     options: [
-      { text: "INFILTRASI, GADGET, DAN MISI SPY", result: "stealth_infiltration" },
-      { text: "ASSASSIN / PARKOUR / HIT AND RUN", result: "stealth_assassin" },
-      { text: "HOROR STEALTH, SEMBUNYI DARI MONSTER", result: "stealth_horror" }
+      { text: "INFILTRASI, GADGET, DAN MISI SPY",  next: "filter_platform", stash: "stealth_infiltration" },
+      { text: "ASSASSIN / PARKOUR / HIT AND RUN",  next: "filter_platform", stash: "stealth_assassin" },
+      { text: "HOROR STEALTH, SEMBUNYI DARI MONSTER",  next: "filter_platform", stash: "stealth_horror" }
     ]
   },
 
@@ -75,39 +75,39 @@ export const quizData = {
   adv_story_focus: {
     text: "CERITA SEPERTI APA YANG KAMU SUKA?",
     options: [
-      { text: "DRAMA EMOSIONAL DAN HUBUNGAN KARAKTER", result: "story_emotional" },
-      { text: "PILIHAN MORAL, CABANG CERITA, DAN KONSEKUENSI", result: "story_choice_based" },
-      { text: "MISTERI NARATIF DAN DUNIA YANG BIKIN PENASARAN", result: "story_mystery" },
-      { text: "SCI-FI / DISTOPIA / TEMA FUTURISTIK", result: "story_scifi" }
+      { text: "DRAMA EMOSIONAL DAN HUBUNGAN KARAKTER",  next: "filter_platform", stash: "story_emotional" },
+      { text: "PILIHAN MORAL, CABANG CERITA, DAN KONSEKUENSI",  next: "filter_platform", stash: "story_choice_based" },
+      { text: "MISTERI NARATIF DAN DUNIA YANG BIKIN PENASARAN",  next: "filter_platform", stash: "story_mystery" },
+      { text: "SCI-FI / DISTOPIA / TEMA FUTURISTIK",  next: "filter_platform", stash: "story_scifi" }
     ]
   },
 
   adv_world_focus: {
     text: "DUNIA OPEN WORLD YANG KAMU MAU ITU MODELNYA GIMANA?",
     options: [
-      { text: "FANTASY / MEDIEVAL / MONSTER / PEDANG", result: "world_fantasy_open" },
-      { text: "MODERN / KOTA / KEJAHATAN / KEBEBASAN LIAR", result: "world_urban_open" },
-      { text: "ALAM / PETUALANGAN / EKSPLORASI YANG TENANG", result: "world_nature_open" },
-      { text: "POST-APOCALYPSE / DUNIA RUNTUH / SURVIVE", result: "world_apocalypse" }
+      { text: "FANTASY / MEDIEVAL / MONSTER / PEDANG",  next: "filter_platform", stash: "world_fantasy_open" },
+      { text: "MODERN / KOTA / KEJAHATAN / KEBEBASAN LIAR",  next: "filter_platform", stash: "world_urban_open" },
+      { text: "ALAM / PETUALANGAN / EKSPLORASI YANG TENANG",  next: "filter_platform", stash: "world_nature_open" },
+      { text: "POST-APOCALYPSE / DUNIA RUNTUH / SURVIVE",  next: "filter_platform", stash: "world_apocalypse" }
     ]
   },
 
   adv_rpg_focus: {
     text: "RPG SEPERTI APA YANG PALING NGENA BUAT KAMU?",
     options: [
-      { text: "ACTION RPG YANG DINAMIS DAN MODERN", result: "rpg_action_modern" },
-      { text: "CRPG / TURN-BASED / BANYAK DIALOG DAN PILIHAN", result: "rpg_crpg" },
-      { text: "LOOTING, GRINDING, DAN PROGRESSION YANG NAGIH", result: "rpg_loot_progression" },
-      { text: "JRPG / PARTY / TURN-BASED KLASIK MODERN", result: "rpg_jrpg" }
+      { text: "ACTION RPG YANG DINAMIS DAN MODERN",  next: "filter_platform", stash: "rpg_action_modern" },
+      { text: "CRPG / TURN-BASED / BANYAK DIALOG DAN PILIHAN",  next: "filter_platform", stash: "rpg_crpg" },
+      { text: "LOOTING, GRINDING, DAN PROGRESSION YANG NAGIH",  next: "filter_platform", stash: "rpg_loot_progression" },
+      { text: "JRPG / PARTY / TURN-BASED KLASIK MODERN",  next: "filter_platform", stash: "rpg_jrpg" }
     ]
   },
 
   adv_puzzle_focus: {
     text: "GAYA TEKA-TEKI YANG KAMU CARI?",
     options: [
-      { text: "PUZZLE LINGKUNGAN DAN LOGIKA DUNIA", result: "puzzle_environmental" },
-      { text: "INVESTIGASI, CLUE, DAN DETEKTIF", result: "puzzle_investigation" },
-      { text: "NARRATIVE PUZZLE / STORY DRIVEN RIDDLE", result: "puzzle_narrative" }
+      { text: "PUZZLE LINGKUNGAN DAN LOGIKA DUNIA",  next: "filter_platform", stash: "puzzle_environmental" },
+      { text: "INVESTIGASI, CLUE, DAN DETEKTIF",  next: "filter_platform", stash: "puzzle_investigation" },
+      { text: "NARRATIVE PUZZLE / STORY DRIVEN RIDDLE",  next: "filter_platform", stash: "puzzle_narrative" }
     ]
   },
 
@@ -125,39 +125,39 @@ export const quizData = {
   casual_party_type: {
     text: "VIBE MABAR YANG KAMU CARI APA?",
     options: [
-      { text: "CO-OP KOMPAK TAPI CHAOS", result: "party_chaos_coop" },
-      { text: "PARTY GAME KOMPETITIF RINGAN", result: "party_light_competitive" },
-      { text: "GAME DUA ORANG YANG KERJA SAMA TOTAL", result: "party_duo_coop" },
-      { text: "SOCIAL DEDUCTION / BOHONG / SIAPA PENGKHIANAT", result: "party_social_deduction" }
+      { text: "CO-OP KOMPAK TAPI CHAOS",  next: "filter_platform", stash: "party_chaos_coop" },
+      { text: "PARTY GAME KOMPETITIF RINGAN",  next: "filter_platform", stash: "party_light_competitive" },
+      { text: "GAME DUA ORANG YANG KERJA SAMA TOTAL",  next: "filter_platform", stash: "party_duo_coop" },
+      { text: "SOCIAL DEDUCTION / BOHONG / SIAPA PENGKHIANAT",  next: "filter_platform", stash: "party_social_deduction" }
     ]
   },
 
   casual_sim_type: {
     text: "SIMULASI APA YANG PALING MENARIK BUATMU?",
     options: [
-      { text: "FARMING / LIFE SIM / COZY HARIAN", result: "sim_life_farming" },
-      { text: "CITY BUILDER / NGATUR KOTA / INFRASTRUKTUR", result: "sim_city_builder" },
-      { text: "MANAGEMENT BISNIS / RUMAH SAKIT / KEBUN BINATANG", result: "sim_business_management" },
-      { text: "BUILDING CREATIVE / SANDBOX / BANGUN BEBAS", result: "sim_creative_sandbox" }
+      { text: "FARMING / LIFE SIM / COZY HARIAN",  next: "filter_platform", stash: "sim_life_farming" },
+      { text: "CITY BUILDER / NGATUR KOTA / INFRASTRUKTUR",  next: "filter_platform", stash: "sim_city_builder" },
+      { text: "MANAGEMENT BISNIS / RUMAH SAKIT / KEBUN BINATANG",  next: "filter_platform", stash: "sim_business_management" },
+      { text: "BUILDING CREATIVE / SANDBOX / BANGUN BEBAS",  next: "filter_platform", stash: "sim_creative_sandbox" }
     ]
   },
 
   casual_indie_type: {
     text: "PENGALAMAN INDIE SEPERTI APA YANG KAMU MAU?",
     options: [
-      { text: "PUZZLE CERDAS DAN MEMUASKAN", result: "indie_puzzle" },
-      { text: "RELAXING, ARTY, DAN ATMOSFERIK", result: "indie_relaxing" },
-      { text: "INDIE UNIK YANG CAMPUR ADUK TAPI NAGIH", result: "indie_unique" },
-      { text: "SHORT STORY / WALKING SIM / CERITA PENDEK", result: "indie_walking_story" }
+      { text: "PUZZLE CERDAS DAN MEMUASKAN",  next: "filter_platform", stash: "indie_puzzle" },
+      { text: "RELAXING, ARTY, DAN ATMOSFERIK",  next: "filter_platform", stash: "indie_relaxing" },
+      { text: "INDIE UNIK YANG CAMPUR ADUK TAPI NAGIH",  next: "filter_platform", stash: "indie_unique" },
+      { text: "SHORT STORY / WALKING SIM / CERITA PENDEK",  next: "filter_platform", stash: "indie_walking_story" }
     ]
   },
 
   casual_rhythm_type: {
     text: "RHYTHM GAME MODEL MANA?",
     options: [
-      { text: "RHYTHM ARCADE / SCORE CHASING", result: "rhythm_arcade" },
-      { text: "MUSICAL STORY / BEAT + CERITA", result: "rhythm_story" },
-      { text: "RHYTHM CO-OP / MAIN BARENG TEMAN", result: "rhythm_coop" }
+      { text: "RHYTHM ARCADE / SCORE CHASING",  next: "filter_platform", stash: "rhythm_arcade" },
+      { text: "MUSICAL STORY / BEAT + CERITA",  next: "filter_platform", stash: "rhythm_story" },
+      { text: "RHYTHM CO-OP / MAIN BARENG TEMAN",  next: "filter_platform", stash: "rhythm_coop" }
     ]
   },
 
@@ -175,39 +175,39 @@ export const quizData = {
   str_rts_type: {
     text: "RTS YANG KAMU MAU ITU LEBIH KE ARAH MANA?",
     options: [
-      { text: "SEJARAH / PERANG / BANGUN PASUKAN", result: "rts_history_war" },
-      { text: "SCI-FI / FAKSI / MAKRO DAN MICRO BERAT", result: "rts_scifi_macro" },
-      { text: "RTS TAKTIS DENGAN POSISI DAN COVER", result: "rts_tactical_field" },
-      { text: "MOBA-RTS HYBRID / LANE / UNIT CONTROL", result: "rts_moba_hybrid" }
+      { text: "SEJARAH / PERANG / BANGUN PASUKAN",  next: "filter_platform", stash: "rts_history_war" },
+      { text: "SCI-FI / FAKSI / MAKRO DAN MICRO BERAT",  next: "filter_platform", stash: "rts_scifi_macro" },
+      { text: "RTS TAKTIS DENGAN POSISI DAN COVER",  next: "filter_platform", stash: "rts_tactical_field" },
+      { text: "MOBA-RTS HYBRID / LANE / UNIT CONTROL",  next: "filter_platform", stash: "rts_moba_hybrid" }
     ]
   },
 
   str_turn_type: {
     text: "GAYA TAKTIKAL APA YANG PALING KAMU SUKA?",
     options: [
-      { text: "SQUAD TACTICS / POSITIONING / HIT CHANCE", result: "turn_tactics_squad" },
-      { text: "GRAND STRATEGY / BANGUN PERADABAN", result: "turn_grand_strategy" },
-      { text: "TURN-BASED RINGKAS TAPI DALAM", result: "turn_compact_strategy" },
-      { text: "4X / EKSPLORASI / EKSPANSI / EKSPLOITASI", result: "turn_4x" }
+      { text: "SQUAD TACTICS / POSITIONING / HIT CHANCE",  next: "filter_platform", stash: "turn_tactics_squad" },
+      { text: "GRAND STRATEGY / BANGUN PERADABAN",  next: "filter_platform", stash: "turn_grand_strategy" },
+      { text: "TURN-BASED RINGKAS TAPI DALAM",  next: "filter_platform", stash: "turn_compact_strategy" },
+      { text: "4X / EKSPLORASI / EKSPANSI / EKSPLOITASI",  next: "filter_platform", stash: "turn_4x" }
     ]
   },
 
   str_management_type: {
     text: "SISTEM APA YANG PALING SERU BUAT KAMU ATUR?",
     options: [
-      { text: "PABRIK, OTOMASI, DAN EFISIENSI PRODUKSI", result: "mgmt_automation" },
-      { text: "KOLONI, KRISIS, DAN DRAMA SISTEMIK", result: "mgmt_colony" },
-      { text: "MANAJEMEN TIM / BISNIS / ORGANISASI", result: "mgmt_team_business" },
-      { text: "LOGISTICS / TRANSPORT / SUPPLY CHAIN", result: "mgmt_logistics" }
+      { text: "PABRIK, OTOMASI, DAN EFISIENSI PRODUKSI",  next: "filter_platform", stash: "mgmt_automation" },
+      { text: "KOLONI, KRISIS, DAN DRAMA SISTEMIK",  next: "filter_platform", stash: "mgmt_colony" },
+      { text: "MANAJEMEN TIM / BISNIS / ORGANISASI",  next: "filter_platform", stash: "mgmt_team_business" },
+      { text: "LOGISTICS / TRANSPORT / SUPPLY CHAIN",  next: "filter_platform", stash: "mgmt_logistics" }
     ]
   },
 
   str_card_type: {
     text: "CARD GAME SEPERTI APA?",
     options: [
-      { text: "DECKBUILDER ROGUELIKE / RUN BERULANG", result: "card_deckbuilder" },
-      { text: "TCG / COLLECTIBLE / META DECK", result: "card_tcg" },
-      { text: "AUTO BATTLER / COMPOSE UNIT DARI KARTU", result: "card_autobattler" }
+      { text: "DECKBUILDER ROGUELIKE / RUN BERULANG",  next: "filter_platform", stash: "card_deckbuilder" },
+      { text: "TCG / COLLECTIBLE / META DECK",  next: "filter_platform", stash: "card_tcg" },
+      { text: "AUTO BATTLER / COMPOSE UNIT DARI KARTU",  next: "filter_platform", stash: "card_autobattler" }
     ]
   },
 
@@ -224,27 +224,27 @@ export const quizData = {
   sports_sim_type: {
     text: "OLAHRAGA APA YANG KAMU MAU?",
     options: [
-      { text: "SEPAKBOLA / CAREER / MANAGER + MAIN", result: "sports_football" },
-      { text: "BASKET / NBA STYLE", result: "sports_basketball" },
-      { text: "OLAHRAGA LAIN / MULTI-SPORT / ARCADE", result: "sports_multi" }
+      { text: "SEPAKBOLA / CAREER / MANAGER + MAIN",  next: "filter_platform", stash: "sports_football" },
+      { text: "BASKET / NBA STYLE",  next: "filter_platform", stash: "sports_basketball" },
+      { text: "OLAHRAGA LAIN / MULTI-SPORT / ARCADE",  next: "filter_platform", stash: "sports_multi" }
     ]
   },
 
   sports_racing_type: {
     text: "GAYA BALAP YANG KAMU SUKA?",
     options: [
-      { text: "SIM RACING REALISTIS / SETUP / TRACK", result: "racing_sim" },
-      { text: "ARCADE RACING / NITRO / KERASAN", result: "racing_arcade" },
-      { text: "OPEN WORLD DRIVING / BEBAS / CUSTOM", result: "racing_openworld" }
+      { text: "SIM RACING REALISTIS / SETUP / TRACK",  next: "filter_platform", stash: "racing_sim" },
+      { text: "ARCADE RACING / NITRO / KERASAN",  next: "filter_platform", stash: "racing_arcade" },
+      { text: "OPEN WORLD DRIVING / BEBAS / CUSTOM",  next: "filter_platform", stash: "racing_openworld" }
     ]
   },
 
   sports_fighting_type: {
     text: "FIGHTING YANG COCOK BUAT KAMU?",
     options: [
-      { text: "TRADITIONAL 2D / 3D FIGHTER / RANKED", result: "fighting_traditional" },
-      { text: "PLATFORM FIGHTER / PARTY FIGHT", result: "fighting_platform" },
-      { text: "BEAT EM UP / CO-OP BRAWLER", result: "fighting_brawler" }
+      { text: "TRADITIONAL 2D / 3D FIGHTER / RANKED",  next: "filter_platform", stash: "fighting_traditional" },
+      { text: "PLATFORM FIGHTER / PARTY FIGHT",  next: "filter_platform", stash: "fighting_platform" },
+      { text: "BEAT EM UP / CO-OP BRAWLER",  next: "filter_platform", stash: "fighting_brawler" }
     ]
   },
 
@@ -261,27 +261,46 @@ export const quizData = {
   rogue_action_type: {
     text: "ACTION ROGUELIKE SEPERTI APA?",
     options: [
-      { text: "BULLET HELL / DODGE / SKILL CEKATAN", result: "rogue_bullet_hell" },
-      { text: "HACK AND SLASH / WEAPON / SYNERGY", result: "rogue_hackslash" },
-      { text: "FPS ROGUELIKE / GUN / PROCEDURAL", result: "rogue_fps" }
+      { text: "BULLET HELL / DODGE / SKILL CEKATAN",  next: "filter_platform", stash: "rogue_bullet_hell" },
+      { text: "HACK AND SLASH / WEAPON / SYNERGY",  next: "filter_platform", stash: "rogue_hackslash" },
+      { text: "FPS ROGUELIKE / GUN / PROCEDURAL",  next: "filter_platform", stash: "rogue_fps" }
     ]
   },
 
   rogue_build_type: {
     text: "FOKUS BUILD-NYA KE MANA?",
     options: [
-      { text: "DECKBUILDER KARTU", result: "card_deckbuilder" },
-      { text: "ITEM SYNERGY / BUILD CRAZY", result: "rogue_item_synergy" },
-      { text: "META PROGRESSION / UNLOCK TERUS", result: "rogue_meta_progress" }
+      { text: "DECKBUILDER KARTU",  next: "filter_platform", stash: "card_deckbuilder" },
+      { text: "ITEM SYNERGY / BUILD CRAZY",  next: "filter_platform", stash: "rogue_item_synergy" },
+      { text: "META PROGRESSION / UNLOCK TERUS",  next: "filter_platform", stash: "rogue_meta_progress" }
     ]
   },
 
   rogue_strategy_type: {
     text: "STRATEGI ROGUELIKE YANG KAMU SUKA?",
     options: [
-      { text: "TURN-BASED TACTICS ROGUELIKE", result: "rogue_tactics" },
-      { text: "AUTO BATTLER / COMPOSE", result: "card_autobattler" },
-      { text: "SURVIVAL RUN / WAVE / DEFENSE", result: "rogue_survival_wave" }
+      { text: "TURN-BASED TACTICS ROGUELIKE",  next: "filter_platform", stash: "rogue_tactics" },
+      { text: "AUTO BATTLER / COMPOSE",  next: "filter_platform", stash: "card_autobattler" },
+      { text: "SURVIVAL RUN / WAVE / DEFENSE",  next: "filter_platform", stash: "rogue_survival_wave" }
+    ]
+  },
+     filter_platform: {
+    text: "KAMU LEBIH SERING MAIN DI PLATFORM MANA?",
+    options: [
+      { text: "PC / LAPTOP", platform: "pc", next: "filter_session" },
+      { text: "CONSOLE (PS / XBOX / SWITCH)", platform: "console", next: "filter_session" },
+      { text: "MOBILE / HP", platform: "mobile", next: "filter_session" },
+      { text: "CAMPUR / BEBAS PLATFORM", platform: "any", next: "filter_session" }
+    ]
+  },
+
+  filter_session: {
+    text: "SESI MAIN YANG KAMU MAU SEPERTI APA?",
+    options: [
+      { text: "CEPAT: 15–40 MENIT, LANGSUNG SERU", finalize: true },
+      { text: "STANDAR: 1–2 JAM PER SESI", finalize: true },
+      { text: "MARATON: MAU TENGGELAM LAMA", finalize: true },
+      { text: "FLEKSIBEL: TERSERAH MOOD", finalize: true }
     ]
   }
 };
