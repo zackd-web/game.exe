@@ -55,7 +55,7 @@ export default function App() {
                 <button
                   key={index}
                   onClick={() => handleOptionClick(option)}
-                  className="w-full text-left p-4 border-4 border-black rounded-none text-black bg-[#ff5722] hover:bg-[#00ff00] transition-colors duration-100 text-sm font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:shadow-none flex justify-between items-center box-border"
+                  className="w-full text-left p-4 border-4 border-black rounded-none text-black bg-[#2754F5] hover:bg-[#00ff00] transition-colors duration-100 text-sm font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:shadow-none flex justify-between items-center box-border"
                 >
                   <span className="uppercase">{option.text}</span>
                   <span className="font-black text-base">[-&gt;]</span>
