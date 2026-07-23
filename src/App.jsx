@@ -15,25 +15,25 @@ export default function App() {
   } = useCinemaQuiz();
 
   return (
-    <div className="bg-[#ffff00] font-mono min-h-screen flex flex-col justify-between w-full m-0 text-black p-4 box-border select-none">
-      
-      {/* Header Brutalist */}
-      <header className="bg-black text-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-center w-full box-border">
-        <h1 className="text-3xl md:text-5xl font-black tracking-tighter m-0 text-[#00ff00]">
-          GAME.EXE
+    <div className="min-h-screen w-full flex flex-col bg-[var(--bg)] text-[var(--text)] font-sans">
+
+      {/* Header */}
+      <header className="border-b border-[var(--border)] py-8 px-4 text-center">
+        <h1 className="text-3xl md:text-4xl font-semibold tracking-tight m-0 text-[var(--text-h)]">
+          Game<span className="text-[var(--accent)]">.exe</span>
         </h1>
-        <p className="text-xs md:text-sm text-[#ffff00] font-bold mt-2 uppercase tracking-widest">
-          Sistem Rekomendasi Game / Berbasis Mood & Multi-Kriteria
+        <p className="text-xs md:text-sm text-[var(--text)] mt-2 uppercase tracking-widest opacity-70">
+          Sistem Rekomendasi Game — Berbasis Mood & Multi-Kriteria
         </p>
       </header>
 
-      {/* Main Box Brutalist */}
-      <main className="max-w-2xl mx-auto my-8 p-6 bg-white border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] flex-grow w-full box-border">
-        
+      {/* Main Box */}
+      <main className="max-w-2xl w-full mx-auto my-8 p-6 md:p-8 bg-[var(--bg)] border border-[var(--border)] rounded-2xl shadow-[var(--shadow)] flex-grow box-border">
+
         {/* Progress Bar */}
-        <div className="w-full bg-white h-6 border-4 border-black mb-8 p-0.5 box-border">
-          <div 
-            className="bg-[#00ff00] h-full border-r-2 border-black transition-all duration-200" 
+        <div className="w-full bg-[var(--code-bg)] h-2 rounded-full mb-8 overflow-hidden">
+          <div
+            className="bg-[var(--accent)] h-full rounded-full transition-all duration-300"
             style={{ width: `${progressPercentage}%` }}
           ></div>
         </div>
@@ -42,10 +42,10 @@ export default function App() {
           /* Screen Pertanyaan */
           <div>
             <div className="mb-6">
-              <span className="text-sm font-black bg-black text-white px-2 py-1 uppercase inline-block mb-3">
-                TAHAP _0{stepCount}
+              <span className="text-xs font-medium bg-[var(--accent-bg)] text-[var(--accent)] px-2.5 py-1 rounded-full uppercase inline-block mb-4 tracking-wide">
+                Tahap 0{stepCount}
               </span>
-              <h2 className="text-xl md:text-2xl font-black text-black border-b-4 border-black pb-3 p-0 text-left tracking-tight">
+              <h2 className="text-xl md:text-2xl font-medium text-[var(--text-h)] text-left tracking-tight leading-snug">
                 {currentData.text}
               </h2>
             </div>
@@ -55,10 +55,12 @@ export default function App() {
                 <button
                   key={index}
                   onClick={() => handleOptionClick(option)}
-                  className="w-full text-left p-4 border-4 border-black rounded-none text-black bg-[#ff5722] hover:bg-[#00ff00] transition-colors duration-100 text-sm font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:shadow-none flex justify-between items-center box-border"
+                  className="w-full text-left p-4 rounded-xl border border-[var(--border)] bg-[var(--bg)] hover:border-[var(--accent-border)] hover:bg-[var(--accent-bg)] transition-colors duration-150 text-sm font-medium text-[var(--text-h)] flex justify-between items-center box-border group"
                 >
-                  <span className="uppercase">{option.text}</span>
-                  <span className="font-black text-base">[-&gt;]</span>
+                  <span>{option.text}</span>
+                  <span className="text-[var(--text)] opacity-50 group-hover:opacity-100 group-hover:text-[var(--accent)] transition-opacity duration-150">
+                    &rarr;
+                  </span>
                 </button>
               ))}
             </div>
@@ -66,44 +68,45 @@ export default function App() {
         ) : (
           /* Screen Hasil Akhir */
           <div className="text-left">
-            <div className="bg-[#00ff00] text-black p-4 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-6">
-              <h2 className="text-2xl font-black m-0 tracking-tighter">REKOMENDASI GAME UNTUKMU:</h2>
-            </div>
-            
-            <div className="bg-black text-[#00ff00] p-3 border-4 border-black font-bold text-xs uppercase mb-6 tracking-tight box-border">
-              LOG_RULE_TERPICU // {recommendations[resultKey].rule}
-            </div>
-            
-            <div className="space-y-6">
-              <h3 className="text-2xl font-black text-black uppercase underline decoration-4 decoration-[#ff5722]">
+            <div className="mb-6">
+              <span className="text-xs font-medium text-[var(--accent)] uppercase tracking-widest">
+                Rekomendasi untukmu
+              </span>
+              <h2 className="text-2xl font-semibold m-0 mt-1 text-[var(--text-h)] tracking-tight">
                 {recommendations[resultKey].title}
-              </h3>
-              
-              <div className="bg-[#ffff00] p-4 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] box-border">
-                <span className="text-xs font-black uppercase block mb-1">
-                  [ INFO GAME ]
+              </h2>
+            </div>
+
+            <div className="bg-[var(--code-bg)] text-[var(--text)] px-3 py-2 rounded-lg font-mono text-xs mb-6 border border-[var(--border)]">
+              rule_triggered: {recommendations[resultKey].rule}
+            </div>
+
+            <div className="space-y-6">
+              <div className="p-4 rounded-xl border border-[var(--border)] bg-[var(--code-bg)] box-border">
+                <span className="text-xs font-medium uppercase tracking-wide text-[var(--text)] opacity-60 block mb-1.5">
+                  Info Game
                 </span>
-                <p className="text-sm text-black font-black m-0 leading-relaxed">
+                <p className="text-sm text-[var(--text-h)] m-0 leading-relaxed">
                   {recommendations[resultKey].specs}
                 </p>
               </div>
 
               <div>
-                <span className="text-xs font-black bg-black text-white px-2 py-0.5 uppercase block mb-2 w-max">
-                  SINOPSIS / ALASAN_
+                <span className="text-xs font-medium uppercase tracking-wide text-[var(--text)] opacity-60 block mb-2">
+                  Sinopsis / Alasan
                 </span>
-                <p className="text-sm text-black font-bold leading-relaxed m-0 text-justify">
+                <p className="text-sm text-[var(--text)] leading-relaxed m-0">
                   {recommendations[resultKey].desc}
                 </p>
               </div>
             </div>
-            
-            <div className="mt-8 pt-4 border-t-4 border-black flex justify-end">
-              <button 
+
+            <div className="mt-8 pt-6 border-t border-[var(--border)] flex justify-end">
+              <button
                 onClick={handleRestart}
-                className="px-6 py-3 bg-[#ffff00] hover:bg-black hover:text-[#00ff00] border-4 border-black text-black font-black text-sm transition-colors duration-150 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
+                className="px-5 py-2.5 rounded-xl bg-[var(--accent)] hover:opacity-90 text-white font-medium text-sm transition-opacity duration-150"
               >
-                CARI GAME LAIN ()
+                Cari game lain
               </button>
             </div>
           </div>
